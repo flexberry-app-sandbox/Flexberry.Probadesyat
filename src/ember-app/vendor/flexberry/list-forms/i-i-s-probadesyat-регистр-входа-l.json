@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-probadesyat-регистр-входа-e",
+  "editForm": "i-i-s-probadesyat-регистр-входа-e",
+  "external": false,
+  "caption": "Регистр входа",
+  "name": "IISProbadesyatРегистрВходаL",
+  "className": "РегистрВходаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probadesyat-регистр-входа",
+      "modelProjection": "РегистрВходаL"
+    }
+  ]
+}

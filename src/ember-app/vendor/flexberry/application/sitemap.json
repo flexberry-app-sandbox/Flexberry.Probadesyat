@@ -1,0 +1,81 @@
+﻿{
+  "applicationCaption": "Probadesyat",
+  "applicationTitle": "Probadesyat",
+  "items": [
+    {
+      "link": null,
+      "menuName": "отель",
+      "caption": "Отель",
+      "title": "Отель",
+      "children": [
+        {
+          "link": "i-i-s-probadesyat-карта-l",
+          "menuName": null,
+          "caption": "Карта",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-probadesyat-комната-l",
+          "menuName": null,
+          "caption": "Комната",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": null,
+          "menuName": "клиенты",
+          "caption": "Клиенты",
+          "title": "Клиенты",
+          "children": [
+            {
+              "link": "i-i-s-probadesyat-гость-l",
+              "menuName": null,
+              "caption": "Гость",
+              "title": "Гость",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "документы",
+          "caption": "Документы",
+          "title": "Документы",
+          "children": [
+            {
+              "link": "i-i-s-probadesyat-регистр-входа-l",
+              "menuName": null,
+              "caption": "Регистрация входа",
+              "title": "Регистр входа",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "персонал",
+          "caption": "Персонал",
+          "title": "Персонал",
+          "children": [
+            {
+              "link": "i-i-s-probadesyat-должности-l",
+              "menuName": null,
+              "caption": "Должности",
+              "title": "Должности",
+              "children": null
+            },
+            {
+              "link": "i-i-s-probadesyat-сотрудник-l",
+              "menuName": null,
+              "caption": "Сотрудник",
+              "title": "Сотрудник",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

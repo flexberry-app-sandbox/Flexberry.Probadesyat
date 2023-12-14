@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Комната",
+      "projection": "КомнатаL",
+      "detailModelName": null
+    },
+    {
+      "master": "гость",
+      "displayAttributeName": "фИО",
+      "required": true,
+      "relationName": "ВходГостя.Гость",
+      "projection": "ГостьL",
+      "detailModelName": "i-i-s-probadesyat-вход-гостя"
+    },
+    {
+      "master": "сотрудник",
+      "displayAttributeName": "фИО",
+      "required": true,
+      "relationName": "ВходСотрудника.Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": "i-i-s-probadesyat-вход-сотрудника"
+    }
+  ],
+  "external": false,
+  "caption": "Регистр входа",
+  "name": "IISProbadesyatРегистрВходаE",
+  "className": "РегистрВходаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probadesyat-регистр-входа",
+      "modelProjection": "РегистрВходаE"
+    }
+  ]
+}

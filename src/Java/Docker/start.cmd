@@ -1,0 +1,1 @@
+docker-compose -p probadesyat-java up -d

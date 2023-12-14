@@ -1,0 +1,132 @@
+﻿{
+  "name": "IISProbadesyatРегистрВхода",
+  "modelName": "i-i-s-probadesyat-регистр-входа",
+  "className": "РегистрВхода",
+  "nameSpace": "IIS.Probadesyat",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "комната",
+      "relatedTo": "i-i-s-probadesyat-комната",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "входГостя",
+      "relatedTo": "i-i-s-probadesyat-вход-гостя",
+      "inverse": "регистрВхода"
+    },
+    {
+      "name": "входСотрудника",
+      "relatedTo": "i-i-s-probadesyat-вход-сотрудника",
+      "inverse": "регистрВхода"
+    }
+  ],
+  "projections": [
+    {
+      "name": "РегистрВходаE",
+      "modelName": "i-i-s-probadesyat-регистр-входа",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "НомерКомнаты",
+          "lookupValueField": "номерКомнаты",
+          "relationName": "Комната",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерКомнаты",
+              "caption": "Номер комнаты",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Комната",
+          "name": "комната",
+          "relatedTo": "i-i-s-probadesyat-комната",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ВходГостяE",
+          "caption": "Вход гостя",
+          "name": "входГостя",
+          "relatedTo": "i-i-s-probadesyat-вход-гостя",
+          "inverse": null
+        },
+        {
+          "projectionName": "ВходСотрудникаE",
+          "caption": "Вход сотрудника",
+          "name": "входСотрудника",
+          "relatedTo": "i-i-s-probadesyat-вход-сотрудника",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "РегистрВходаL",
+      "modelName": "i-i-s-probadesyat-регистр-входа",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Комната",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерКомнаты",
+              "caption": "Номер комнаты",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер комнаты",
+          "name": "комната",
+          "relatedTo": "i-i-s-probadesyat-комната",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
